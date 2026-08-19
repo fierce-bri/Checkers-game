@@ -2,7 +2,7 @@
 
 A local two-player checkers game built with Java Swing. The project demonstrates object-oriented design, event-driven input, game-state management, move validation, captures, king promotion, status feedback, and win detection.
 
-![Java Checkers gameplay](docs/checkers-game.png)
+![Java Checkers gameplay](Screenshot.png)
 
 ## What the Project Does
 
@@ -18,7 +18,6 @@ Players take turns selecting and moving pieces with the mouse on an 8×8 board. 
 - King promotion
 - Win detection
 - Java Swing interface with game-status feedback
-- Optional background-audio controls
 
 ## What I Implemented
 
@@ -37,23 +36,20 @@ I worked on the Java application structure and the core game systems, including:
 - Swing and AWT
 - Object-Oriented Programming
 - Event-driven programming
-- Java Sound API
 
 ## Project Structure
 
 ```text
 .
-├── images/                 # Piece and interface images
-├── sound/                  # Audio asset used by the game
-├── src/checkers/
-│   ├── Board.java          # Board state, move validation, captures and turns
-│   ├── GamePanel.java      # Main game panel and audio controls
-│   ├── InvalidMoveException.java
-│   ├── Main.java           # Application entry point
-│   ├── Piece.java          # Piece state and rendering
-│   └── Square.java         # Board-square state and rendering
-└── docs/
-    └── checkers-game.png   # Gameplay screenshot
+├── Screenshot.png          # Gameplay screenshot
+├── images/                 # Piece images
+└── src/checkers/
+    ├── Board.java          # Board state, move validation, captures and turns
+    ├── GamePanel.java      # Main game container
+    ├── InvalidMoveException.java
+    ├── Main.java           # Application entry point
+    ├── Piece.java          # Piece state and rendering
+    └── Square.java         # Board-square state and rendering
 ```
 
 ## Requirements
@@ -61,7 +57,7 @@ I worked on the Java application structure and the core game systems, including:
 - JDK 16 or newer
 - A desktop environment capable of displaying Java Swing applications
 
-The application uses relative paths for its image and sound assets, so run the commands from the repository root.
+The application uses relative paths for its image assets, so run the commands from the repository root.
 
 ## Run from the Command Line
 
@@ -88,7 +84,7 @@ java -cp out checkers.Main
 3. Configure a JDK.
 4. Use `src` as the source directory.
 5. Run `src/checkers/Main.java`.
-6. Keep the working directory set to the repository root so the application can locate `images/` and `sound/`.
+6. Keep the working directory set to the repository root so the application can locate `images/`.
 
 ## Current Scope
 
