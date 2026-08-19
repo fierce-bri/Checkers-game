@@ -5,7 +5,7 @@
 *.ear
 bin/
 out/
-build/
+build/ g
 target/
 
 # JVM crash logs
